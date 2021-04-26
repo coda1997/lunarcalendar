@@ -25,6 +25,7 @@ namespace lunarcalendar
     public partial class MainWindow : Window, INotifyPropertyChanged
     {
         public DateTime CurrentDateAndTime { get; set; }
+        private LunarCalendar lunar = new();
 
         public MainWindow()
         {
@@ -35,6 +36,7 @@ namespace lunarcalendar
             dispatcherTimer.Interval = TimeSpan.FromSeconds(1);
             dispatcherTimer.Tick += new EventHandler(DisplayTime);
             dispatcherTimer.Start();
+            slogan.Content = lunar.IsFriday;
         }
 
         public event PropertyChangedEventHandler PropertyChanged;

@@ -10,7 +10,7 @@
         <Viewbox>
 
             <Grid Width="640" Height="360">
-                <Label Content="今日是周五吗？不是" HorizontalAlignment="Center" Margin="0,74,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="36" Foreground="#FFFAE34F" HorizontalContentAlignment="Center"/>
+                <Label x:Name="slogan" Content="今日是周五吗？不是" HorizontalAlignment="Center" Margin="0,74,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="36" Foreground="#FFFAE34F" HorizontalContentAlignment="Center"/>
                 <Label Content="{Binding CurrentDateAndTime}" ContentStringFormat=" {0:yyyy年MM月dd日 dddd} " HorizontalAlignment="Center" Margin="0,122,0,0" VerticalAlignment="Top" Foreground="#FFFAE34F" FontWeight="Bold" HorizontalContentAlignment="Center" FontSize="16"/>
                 <Label Content="{Binding CurrentDateAndTime}" ContentStringFormat=" {0:HH:mm:ss tt} " HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,141,0,0" Foreground="#FFFAE34F" FontSize="48" HorizontalContentAlignment="Center" FontWeight="Normal"/>
                 <Label Content="Label" HorizontalAlignment="Center" Margin="0,208,0,0" VerticalAlignment="Top" Height="4" Width="334" Foreground="#FFFAE34F" Background="#FFFAE34F"/>
