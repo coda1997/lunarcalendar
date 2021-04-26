@@ -2,9 +2,7 @@
 
 A screen saver application despaired from [jikeCalendar in macOS](https://github.com/Dawninest/jikeCalendar-macOS).
 
-Supported by .Net 5.0
-
-Screen capture:
+Supported by [.Net 5.0](https://dotnet.microsoft.com/)
 
 ![img](saver.png)
 
