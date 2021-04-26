@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:lunarcalendar"
         mc:Ignorable="d"
         Title="MainWindow" Height="360" Width="640">
-    <Grid Background="Black">
+    <Grid Background="Black" MouseMove="Window1_MouseMove">
         <Viewbox>
 
             <Grid Width="640" Height="360">

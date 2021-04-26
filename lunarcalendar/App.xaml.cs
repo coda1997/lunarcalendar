@@ -25,7 +25,6 @@ namespace lunarcalendar
                 new FrameworkPropertyMetadata(
                     XmlLanguage.GetLanguage(CultureInfo.CurrentCulture.IetfLanguageTag)));
             base.OnStartup(e);
-         
         }
     }
 }
