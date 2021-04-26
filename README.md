@@ -6,7 +6,7 @@ Supported by .Net 5.0
 
 Screen capture:
 
-![img]("saver.jpg")
+![img]("saver.png")
 
 todo:
 
