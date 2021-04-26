@@ -28,7 +28,7 @@ namespace lunarcalendar
 
         public MainWindow()
         {
-            //Thread.CurrentThread.CurrentUICulture = new CultureInfo("en-IN");
+
             InitializeComponent();
             this.DataContext = this;
             DispatcherTimer dispatcherTimer = new();

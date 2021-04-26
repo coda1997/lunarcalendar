@@ -10,7 +10,6 @@ namespace lunarcalendar.Resources
     {
         private String slogan;
         private String isFriday;
-        private readonly DateTime dateTime = new DateTime();
 
         public string IsFriday { get => isFriday; set => isFriday = value; }
         public string Slogan { get => slogan; set => slogan = value; }
