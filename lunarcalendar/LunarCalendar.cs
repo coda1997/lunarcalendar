@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace lunarcalendar
 {
@@ -10,6 +6,20 @@ namespace lunarcalendar
     {
         private String slogan;
         private String isFriday;
+        private String countDown;
+        private readonly DateTime targetTime = new(2022, 1, 19, 18, 0, 0, 0, DateTimeKind.Local);
+
+        public string CountDown 
+        {
+            get { 
+                DateTime now = DateTime.Now;
+                var offset = targetTime - now;
+                countDown = "距离回家还有：" + offset.ToString("T");
+                return countDown;
+            }
+
+            private set => countDown = value;
+        }
 
         public string IsFriday
         {
@@ -28,5 +38,8 @@ namespace lunarcalendar
             private set => isFriday = value;
         }
         public string Slogan { get => slogan; set => slogan = value; }
+
+
+
     }
 }

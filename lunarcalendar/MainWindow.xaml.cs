@@ -25,12 +25,14 @@ namespace lunarcalendar
             dispatcherTimer.Tick += new EventHandler(DisplayTime);
             dispatcherTimer.Start();
             slogan.Content = lunar.IsFriday;
+            countDown.Content = lunar.CountDown;
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
 
         void DisplayTime(object sender, EventArgs e) {
             CurrentDateAndTime = DateTime.Now;
+            countDown.Content = lunar.CountDown;
             PropertyChanged(this, new PropertyChangedEventArgs(nameof(CurrentDateAndTime)));
         }
         bool _isActive;
